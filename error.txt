@@ -1,0 +1,358 @@
+[rand@nixos:~/libratbag]$ rm -rf build && meson setup build && ninja -C build
+The Meson build system
+Version: 1.12.1
+Source dir: /home/rand/libratbag
+Build dir: /home/rand/libratbag/build
+Build type: native build
+Project name: libratbag
+Project version: 0.18
+C compiler for the host machine: gcc (gcc 16.2.0 "gcc (GCC) 16.2.0")
+C linker for the host machine: gcc ld.bfd 2.46
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found pkg-config: YES (/nix/store/b9izmrfjp0qnnyahdwwrzdwi87s1h179-pkg-config-wrapper-0.29.2/bin/pkg-config) 0.29.2
+Run-time dependency libudev found: YES 261
+Run-time dependency libevdev found: YES 1.13.6
+Run-time dependency glib-2.0 found: YES 2.88.3
+Run-time dependency json-glib-1.0 found: YES 1.10.8
+Library m found: YES
+Library unistring found: YES
+Run-time dependency libsystemd found: YES 261
+Run-time dependency systemd found: YES 261
+Found pkg-config: YES (/nix/store/b9izmrfjp0qnnyahdwwrzdwi87s1h179-pkg-config-wrapper-0.29.2/bin/pkg-config) 0.29.2
+Configuring lur-command.1 using configuration
+Program /home/rand/libratbag/test/data-parse-test.py found: YES (/home/rand/libratbag/test/data-parse-test.py)
+Program /home/rand/libratbag/test/duplicate-check.py found: YES (/home/rand/libratbag/test/duplicate-check.py)
+Program /home/rand/libratbag/test/receiver-check.py found: YES (/home/rand/libratbag/test/receiver-check.py)
+Run-time dependency check found: YES 0.15.2
+Program valgrind found: YES (/nix/store/px7wv2vfgzjagdqx2709qx5v9167gyj1-valgrind-3.27.1/bin/valgrind)
+Configuring ratbagd.service using configuration
+Configuring org.freedesktop.ratbag1.service using configuration
+Configuring org.freedesktop.ratbag1.conf using configuration
+Program python3 found: YES (/nix/store/lb41b0anx1f98y9y5s9mdv97gjgsq740-python3-3.14.7/bin/python3.14)
+Found pkg-config: YES (/nix/store/b9izmrfjp0qnnyahdwwrzdwi87s1h179-pkg-config-wrapper-0.29.2/bin/pkg-config) 0.29.2
+Run-time dependency python found: YES 3.14
+Configuring ratbagctl.body.py using configuration
+Configuring ratbagctl.1 using configuration
+Configuring toolbox.py using configuration
+Configuring ratbagctl.devel using configuration
+Configuring ratbagctl.test using configuration
+Program /home/rand/libratbag/build/ratbagctl.test found: YES (/home/rand/libratbag/build/ratbagctl.test)
+Program swig found: YES (/nix/store/8zb9xi346yz0508qbyjl2nkzd03w6qbm-swig-4.4.1/bin/swig)
+Configuring ratbagc.py using configuration
+Configuring config.h using configuration
+Program /home/rand/libratbag/test/python-black-check.sh found: YES (/home/rand/libratbag/test/python-black-check.sh)
+Program /home/rand/libratbag/test/python-ruff-check.sh found: YES (/home/rand/libratbag/test/python-ruff-check.sh)
+Build targets in project: 23
+NOTICE: Future-deprecated features used:
+ * 0.56.0: {'dependency.get_pkgconfig_variable'}
+
+Found ninja-1.13.2 at /nix/store/4nsdla28c4177ssp0hlyv5l2yzj8wcba-ninja-1.13.2/bin/ninja
+ninja: Entering directory `build'
+[1/87] Compiling C object libutil.a.p/src_libratbag-util.c.o
+In file included from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/ctype.h:25,
+                 from ../src/libratbag-util.c:32:
+/nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[3/87] Compiling C object libhidpp.a.p/src_hidpp-generic.c.o
+In file included from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/bits/libc-header-start.h:33,
+                 from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/stdint.h:26,
+                 from /nix/store/5q6bdxkp7lc70gn9mnf4yiybrx8ry5xq-gcc-16.2.0/lib/gcc/x86_64-unknown-linux-gnu/16.2.0/include/stdint.h:11,
+                 from ../src/hidpp-generic.h:31,
+                 from ../src/hidpp-generic.c:31:
+/nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[4/87] Compiling C object liblur.so.3.0.3.p/src_liblur.c.o
+In file included from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/assert.h:35,
+                 from ../src/liblur.c:28:
+/nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[5/87] Compiling C object libratbag.a.p/src_driver-etekcity.c.o
+In file included from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/assert.h:35,
+                 from ../src/driver-etekcity.c:25:
+/nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[6/87] Compiling C object libratbag.a.p/src_driver-logitech-g300.c.o
+In file included from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/assert.h:35,
+                 from ../src/driver-logitech-g300.c:25:
+/nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[7/87] Compiling C object libratbag.a.p/src_driver-hidpp10.c.o
+In file included from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/errno.h:25,
+                 from ../src/driver-hidpp10.c:39:
+/nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[8/87] Compiling C object libratbag.a.p/src_driver-asus.c.o
+In file included from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/errno.h:25,
+                 from ../src/driver-asus.c:25:
+/nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[9/87] Compiling C object libasus.a.p/src_asus.c.o
+In file included from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/sys/time.h:21,
+                 from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/linux/input.h:13,
+                 from ../src/asus.h:3,
+                 from ../src/asus.c:26:
+/nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[10/87] Compiling C object libratbag.a.p/src_driver-logitech-g600.c.o
+In file included from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/assert.h:35,
+                 from ../src/driver-logitech-g600.c:25:
+/nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[12/87] Compiling C object libratbag.a.p/src_driver-roccat.c.o
+In file included from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/assert.h:35,
+                 from ../src/driver-roccat.c:25:
+/nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[13/87] Compiling C object libratbag.a.p/src_driver-hidpp20.c.o
+In file included from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/errno.h:25,
+                 from ../src/driver-hidpp20.c:39:
+/nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[14/87] Compiling C object libratbag.a.p/src_driver-roccat-kone-emp.c.o
+In file included from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/assert.h:35,
+                 from ../src/driver-roccat-kone-emp.c:37:
+/nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[15/87] Compiling C object libratbag.a.p/src_driver-openinput.c.o
+In file included from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/sys/time.h:21,
+                 from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/linux/input.h:13,
+                 from ../src/libratbag-private.h:27,
+                 from ../src/driver-openinput.c:26:
+/nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[16/87] Compiling C object libhidpp.a.p/src_hidpp20.c.o
+In file included from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/assert.h:35,
+                 from ../src/hidpp20.c:34:
+/nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[17/87] Compiling C object libratbag.a.p/src_driver-roccat-kone-pure.c.o
+In file included from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/assert.h:35,
+                 from ../src/driver-roccat-kone-pure.c:25:
+/nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[18/87] Compiling C object libratbag.a.p/src_driver-atk.c.o
+FAILED: [code=1] libratbag.a.p/src_driver-atk.c.o 
+gcc -Ilibratbag.a.p -I. -I.. -I../src -I/nix/store/f2nx811jmkkhvwgdkvlv05xqbv2wvjd4-systemd-261.3-dev/include -I/nix/store/7a0472vfn9z4d7llkb0nw06jji98yn7d-libevdev-1.13.6/include/libevdev-1.0/ -I/nix/store/jipb8y1xzhxjga5iccw8jmas0bc0px47-glib-2.88.3-dev/include/glib-2.0 -I/nix/store/3dkchpfn8r3ipsccl1001xhcl5smfjdx-glib-2.88.3/lib/glib-2.0/include -I/nix/store/jipb8y1xzhxjga5iccw8jmas0bc0px47-glib-2.88.3-dev/include -I/nix/store/x3rk1fz7v5vqnn86i8q44dyckp5av16p-json-glib-1.10.8-dev/include/json-glib-1.0 -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=gnu99 -O0 -g -Wno-unused-parameter -fvisibility=hidden -Wmissing-prototypes -Wformat -Werror=format-security -Wstrict-prototypes -fPIC -MD -MQ libratbag.a.p/src_driver-atk.c.o -MF libratbag.a.p/src_driver-atk.c.o.d -o libratbag.a.p/src_driver-atk.c.o -c ../src/driver-atk.c
+In file included from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/bits/libc-header-start.h:33,
+                 from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/stdint.h:26,
+                 from /nix/store/5q6bdxkp7lc70gn9mnf4yiybrx8ry5xq-gcc-16.2.0/lib/gcc/x86_64-unknown-linux-gnu/16.2.0/include/stdint.h:11,
+                 from ../src/driver-atk.h:12,
+                 from ../src/driver-atk.c:26:
+/nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+../src/driver-atk.h:332:30: warning: ‘struct ratbag_device’ declared inside parameter list will not be visible outside of this definition or declaration
+  332 | int atk_read_advanced(struct ratbag_device *device,
+      |                              ^~~~~~~~~~~~~
+../src/driver-atk.h:334:31: warning: ‘struct ratbag_device’ declared inside parameter list will not be visible outside of this definition or declaration
+  334 | int atk_write_advanced(struct ratbag_device *device,
+      |                               ^~~~~~~~~~~~~
+../src/driver-atk.h:336:31: warning: ‘struct ratbag_device’ declared inside parameter list will not be visible outside of this definition or declaration
+  336 | int atk_read_dpi_color(struct ratbag_device *device, unsigned int stage,
+      |                               ^~~~~~~~~~~~~
+../src/driver-atk.h:338:32: warning: ‘struct ratbag_device’ declared inside parameter list will not be visible outside of this definition or declaration
+  338 | int atk_write_dpi_color(struct ratbag_device *device, unsigned int stage,
+      |                                ^~~~~~~~~~~~~
+../src/driver-atk.h:340:29: warning: ‘struct ratbag_device’ declared inside parameter list will not be visible outside of this definition or declaration
+  340 | int atk_read_battery(struct ratbag_device *device, uint8_t *level,
+      |                             ^~~~~~~~~~~~~
+../src/driver-atk.h:342:30: warning: ‘struct ratbag_device’ declared inside parameter list will not be visible outside of this definition or declaration
+  342 | int atk_factory_reset(struct ratbag_device *device);
+      |                              ^~~~~~~~~~~~~
+../src/driver-atk.c: In function ‘atk_commit’:
+../src/driver-atk.c:826:31: warning: variable ‘rec’ set but not used [-Wunused-but-set-variable=]
+  826 |       uint8_t xc, yc, ex = 0, rec[4];
+      |                               ^~~
+../src/driver-atk.c:854:31: error: ‘ATK_ADDR_MAX_DPI’ undeclared (first use in this function); did you mean ‘ATK_ADDR_DPI3’?
+  854 |     rc = atk_write_u8(device, ATK_ADDR_MAX_DPI, num_active);
+      |                               ^~~~~~~~~~~~~~~~
+      |                               ATK_ADDR_DPI3
+../src/driver-atk.c:854:31: note: each undeclared identifier is reported only once for each function it appears in
+../src/driver-atk.c:857:31: error: ‘ATK_ADDR_CURRENT_DPI’ undeclared (first use in this function)
+  857 |     rc = atk_write_u8(device, ATK_ADDR_CURRENT_DPI, cur);
+      |                               ^~~~~~~~~~~~~~~~~~~~
+../src/driver-atk.c: At top level:
+../src/driver-atk.c:972:5: error: conflicting types for ‘atk_read_advanced’; have ‘int(struct ratbag_device *, struct atk_advanced_settings *)’
+  972 | int atk_read_advanced(struct ratbag_device *device,
+      |     ^~~~~~~~~~~~~~~~~
+../src/driver-atk.h:332:5: note: previous declaration of ‘atk_read_advanced’ with type ‘int(struct ratbag_device *, struct atk_advanced_settings *)’
+  332 | int atk_read_advanced(struct ratbag_device *device,
+      |     ^~~~~~~~~~~~~~~~~
+../src/driver-atk.c:1012:5: error: conflicting types for ‘atk_write_advanced’; have ‘int(struct ratbag_device *, const struct atk_advanced_settings *)’
+ 1012 | int atk_write_advanced(struct ratbag_device *device,
+      |     ^~~~~~~~~~~~~~~~~~
+../src/driver-atk.h:334:5: note: previous declaration of ‘atk_write_advanced’ with type ‘int(struct ratbag_device *, const struct atk_advanced_settings *)’
+  334 | int atk_write_advanced(struct ratbag_device *device,
+      |     ^~~~~~~~~~~~~~~~~~
+../src/driver-atk.c:1063:5: warning: no previous prototype for ‘atk_read_macro’ [-Wmissing-prototypes]
+ 1063 | int atk_read_macro(struct ratbag_device *device, int slot,
+      |     ^~~~~~~~~~~~~~
+../src/driver-atk.c:1103:5: warning: no previous prototype for ‘atk_write_macro’ [-Wmissing-prototypes]
+ 1103 | int atk_write_macro(struct ratbag_device *device, int slot,
+      |     ^~~~~~~~~~~~~~~
+../src/driver-atk.c:1142:5: warning: no previous prototype for ‘atk_erase_macro’ [-Wmissing-prototypes]
+ 1142 | int atk_erase_macro(struct ratbag_device *device, int slot) {
+      |     ^~~~~~~~~~~~~~~
+../src/driver-atk.c:1151:5: error: conflicting types for ‘atk_read_dpi_color’; have ‘int(struct ratbag_device *, unsigned int,  uint8_t *, uint8_t *, uint8_t *)’ {aka ‘int(struct ratbag_device *, unsigned int,  unsigned char *, unsigned char *, unsigned char *)’}
+ 1151 | int atk_read_dpi_color(struct ratbag_device *device, unsigned int stage,
+      |     ^~~~~~~~~~~~~~~~~~
+../src/driver-atk.h:336:5: note: previous declaration of ‘atk_read_dpi_color’ with type ‘int(struct ratbag_device *, unsigned int,  uint8_t *, uint8_t *, uint8_t *)’ {aka ‘int(struct ratbag_device *, unsigned int,  unsigned char *, unsigned char *, unsigned char *)’}
+  336 | int atk_read_dpi_color(struct ratbag_device *device, unsigned int stage,
+      |     ^~~~~~~~~~~~~~~~~~
+../src/driver-atk.c:1167:5: error: conflicting types for ‘atk_write_dpi_color’; have ‘int(struct ratbag_device *, unsigned int,  uint8_t,  uint8_t,  uint8_t)’ {aka ‘int(struct ratbag_device *, unsigned int,  unsigned char,  unsigned char,  unsigned char)’}
+ 1167 | int atk_write_dpi_color(struct ratbag_device *device, unsigned int stage,
+      |     ^~~~~~~~~~~~~~~~~~~
+../src/driver-atk.h:338:5: note: previous declaration of ‘atk_write_dpi_color’ with type ‘int(struct ratbag_device *, unsigned int,  uint8_t,  uint8_t,  uint8_t)’ {aka ‘int(struct ratbag_device *, unsigned int,  unsigned char,  unsigned char,  unsigned char)’}
+  338 | int atk_write_dpi_color(struct ratbag_device *device, unsigned int stage,
+      |     ^~~~~~~~~~~~~~~~~~~
+../src/driver-atk.c:1186:5: error: conflicting types for ‘atk_read_battery’; have ‘int(struct ratbag_device *, uint8_t *, _Bool *)’ {aka ‘int(struct ratbag_device *, unsigned char *, _Bool *)’}
+ 1186 | int atk_read_battery(struct ratbag_device *device, uint8_t *level,
+      |     ^~~~~~~~~~~~~~~~
+../src/driver-atk.h:340:5: note: previous declaration of ‘atk_read_battery’ with type ‘int(struct ratbag_device *, uint8_t *, _Bool *)’ {aka ‘int(struct ratbag_device *, unsigned char *, _Bool *)’}
+  340 | int atk_read_battery(struct ratbag_device *device, uint8_t *level,
+      |     ^~~~~~~~~~~~~~~~
+../src/driver-atk.c:1200:5: error: conflicting types for ‘atk_factory_reset’; have ‘int(struct ratbag_device *)’
+ 1200 | int atk_factory_reset(struct ratbag_device *device) {
+      |     ^~~~~~~~~~~~~~~~~
+../src/driver-atk.h:342:5: note: previous declaration of ‘atk_factory_reset’ with type ‘int(struct ratbag_device *)’
+  342 | int atk_factory_reset(struct ratbag_device *device);
+      |     ^~~~~~~~~~~~~~~~~
+[19/87] Compiling C object libratbag.a.p/src_driver-marsgaming_driver-marsgaming.c.o
+In file included from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/sys/time.h:21,
+                 from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/linux/input.h:13,
+                 from ../src/libratbag-private.h:27,
+                 from ../src/driver-marsgaming/driver-marsgaming.c:1:
+/nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[20/87] Compiling C object libratbag.a.p/src_driver-gskill.c.o
+In file included from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/sys/time.h:21,
+                 from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/linux/input.h:13,
+                 from ../src/libratbag-private.h:27,
+                 from ../src/driver-gskill.c:25:
+/nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[21/87] Compiling C object libratbag.a.p/src_driver-marsgaming_marsgaming-commit.c.o
+In file included from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/sys/time.h:21,
+                 from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/linux/input.h:13,
+                 from ../src/libratbag-private.h:27,
+                 from ../src/driver-marsgaming/marsgaming-commit.h:2,
+                 from ../src/driver-marsgaming/marsgaming-commit.c:1:
+/nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[22/87] Compiling C object libratbag.a.p/src_driver-sinowealth-nubwo.c.o
+In file included from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/bits/libc-header-start.h:33,
+                 from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/stdint.h:26,
+                 from /nix/store/5q6bdxkp7lc70gn9mnf4yiybrx8ry5xq-gcc-16.2.0/lib/gcc/x86_64-unknown-linux-gnu/16.2.0/include/stdint.h:11,
+                 from ../src/libratbag-hidraw.h:27,
+                 from ../src/driver-sinowealth-nubwo.c:26:
+/nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[23/87] Compiling C object libratbag.a.p/src_driver-marsgaming_marsgaming-leds.c.o
+In file included from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/bits/libc-header-start.h:33,
+                 from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/stdint.h:26,
+                 from /nix/store/5q6bdxkp7lc70gn9mnf4yiybrx8ry5xq-gcc-16.2.0/lib/gcc/x86_64-unknown-linux-gnu/16.2.0/include/stdint.h:11,
+                 from ../src/driver-marsgaming/marsgaming-leds.h:2,
+                 from ../src/driver-marsgaming/marsgaming-leds.c:1:
+/nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[24/87] Compiling C object libratbag.a.p/src_driver-marsgaming_marsgaming-command.c.o
+In file included from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/sys/time.h:21,
+                 from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/linux/input.h:13,
+                 from ../src/libratbag-private.h:27,
+                 from ../src/driver-marsgaming/marsgaming-command.h:2,
+                 from ../src/driver-marsgaming/marsgaming-command.c:1:
+/nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[25/87] Compiling C object libratbag.a.p/src_driver-marsgaming_marsgaming-buttons.c.o
+In file included from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/sys/time.h:21,
+                 from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/linux/input.h:13,
+                 from ../src/libratbag-private.h:27,
+                 from ../src/driver-marsgaming/marsgaming-buttons.h:2,
+                 from ../src/driver-marsgaming/marsgaming-buttons.c:1:
+/nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[26/87] Compiling C object libratbag.a.p/src_driver-steelseries.c.o
+In file included from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/assert.h:35,
+                 from ../src/driver-steelseries.c:25:
+/nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[27/87] Compiling C object libhidpp.a.p/src_hidpp10.c.o
+In file included from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/assert.h:35,
+                 from ../src/hidpp10.c:34:
+/nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+../src/hidpp10.c: In function ‘hidpp10_profile_parse_names’:
+../src/hidpp10.c:1423:58: warning: taking address of packed member of ‘struct <anonymous>’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+ 1423 |                                           metadata->lgs02.name,
+      |                                           ~~~~~~~~~~~~~~~^~~~~
+../src/hidpp10.c:1428:78: warning: taking address of packed member of ‘struct <anonymous>’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+ 1428 |                                                   metadata->lgs02.macro_names[i],
+      |                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+../src/hidpp10.c: In function ‘hidpp10_profile_set_names’:
+../src/hidpp10.c:1450:50: warning: taking address of packed member of ‘struct <anonymous>’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+ 1450 |         hidpp10_uchar8_to_uchar16(metadata->lgs02.name,
+      |                                   ~~~~~~~~~~~~~~~^~~~~
+../src/hidpp10.c:1454:70: warning: taking address of packed member of ‘struct <anonymous>’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+ 1454 |                 hidpp10_uchar8_to_uchar16(metadata->lgs02.macro_names[i],
+      |                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+[28/87] Compiling C object libratbag.a.p/src_driver-marsgaming_marsgaming-query.c.o
+In file included from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/sys/time.h:21,
+                 from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/linux/input.h:13,
+                 from ../src/libratbag-private.h:27,
+                 from ../src/driver-marsgaming/marsgaming-buttons.h:2,
+                 from ../src/driver-marsgaming/marsgaming-protocol.h:2,
+                 from ../src/driver-marsgaming/marsgaming-query.h:2,
+                 from ../src/driver-marsgaming/marsgaming-query.c:1:
+/nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[29/87] Compiling C object libratbag.a.p/src_driver-marsgaming_marsgaming-probe.c.o
+In file included from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/sys/time.h:21,
+                 from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/linux/input.h:13,
+                 from ../src/libratbag-private.h:27,
+                 from ../src/driver-marsgaming/marsgaming-probe.h:2,
+                 from ../src/driver-marsgaming/marsgaming-probe.c:1:
+/nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[30/87] Compiling C object libratbag.a.p/src_driver-sinowealth.c.o
+In file included from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/bits/libc-header-start.h:33,
+                 from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/stdlib.h:26,
+                 from ../src/libratbag-util.h:30,
+                 from ../src/driver-sinowealth.h:26,
+                 from ../src/driver-sinowealth.c:24:
+/nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[31/87] Compiling C object libratbag.a.p/src_driver-test.c.o
+In file included from /nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/errno.h:25,
+                 from ../src/driver-test.c:26:
+/nix/store/m38wglsqnh1mrmj2cmqa3pjb6w4yjxdi-glibc-2.44-25-dev/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+ninja: build stopped: subcommand failed.
