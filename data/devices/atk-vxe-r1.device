@@ -1,0 +1,11 @@
+[Device]
+Name=ATK VXE R1
+Driver=atk
+DeviceType=mouse
+DeviceMatch=usb:3554:f58f
+
+[Device]
+Name=ATK VXE R1 PRO NK
+Driver=atk
+DeviceType=mouse
+DeviceMatch=usb:3554:f58c

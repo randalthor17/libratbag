@@ -837,24 +837,19 @@ static int atk_commit(struct ratbag_device *device) {
       rec[1] = yc;
       rec[2] = ex;
       rec[3] = (ATK_CHECKSUM_MAGIC - (xc + yc + ex)) & 0xff;
-
-      uint8_t stage_buf[10];
-      rc = atk_read(device, ATK_ADDR_REPORT_RATE, 10, stage_buf);
-      if (rc == 0) {
-        stage_buf[2] = num_active;
-        stage_buf[3] = (ATK_CHECKSUM_MAGIC - num_active) & 0xff;
-        stage_buf[4] = cur;
-        stage_buf[5] = (ATK_CHECKSUM_MAGIC - cur) & 0xff;
-        rc = atk_write(device, ATK_ADDR_REPORT_RATE, 10, stage_buf);
-      }
+      rc = atk_write(device, atk_dpi_addr(res->index), 4, rec);
       if (rc < 0)
         return rc;
     }
 
-    rc = atk_write_u8(device, ATK_ADDR_MAX_DPI, num_active);
-    if (rc < 0)
-      return rc;
-    rc = atk_write_u8(device, ATK_ADDR_CURRENT_DPI, cur);
+    rc = atk_read(device, ATK_ADDR_REPORT_RATE, 10, raw);
+    if (rc == 0) {
+      raw[2] = num_active;
+      raw[3] = (ATK_CHECKSUM_MAGIC - num_active) & 0xff;
+      raw[4] = cur;
+      raw[5] = (ATK_CHECKSUM_MAGIC - cur) & 0xff;
+      rc = atk_write(device, ATK_ADDR_REPORT_RATE, 10, raw);
+    }
     if (rc < 0)
       return rc;
 
@@ -1060,8 +1055,8 @@ int atk_write_advanced(struct ratbag_device *device,
 /* MACRO READ/WRITE                                                    */
 /* ================================================================== */
 
-int atk_read_macro(struct ratbag_device *device, int slot,
-                   struct atk_macro *out) {
+static int atk_read_macro(struct ratbag_device *device, int slot,
+                          struct atk_macro *out) {
   uint16_t base = ATK_ADDR_MACRO0 + slot * ATK_MACRO_SLOT_SIZE;
   uint8_t header[10];
   int rc;
@@ -1100,8 +1095,8 @@ int atk_read_macro(struct ratbag_device *device, int slot,
   return 0;
 }
 
-int atk_write_macro(struct ratbag_device *device, int slot,
-                    const struct atk_macro *m) {
+static int atk_write_macro(struct ratbag_device *device, int slot,
+                           const struct atk_macro *m) {
   uint16_t base = ATK_ADDR_MACRO0 + slot * ATK_MACRO_SLOT_SIZE;
   uint8_t header[10] = {0};
   int rc;
@@ -1139,7 +1134,7 @@ int atk_write_macro(struct ratbag_device *device, int slot,
   return 0;
 }
 
-int atk_erase_macro(struct ratbag_device *device, int slot) {
+static int atk_erase_macro(struct ratbag_device *device, int slot) {
   struct atk_macro empty = {.count = 0};
   return atk_write_macro(device, slot, &empty);
 }

@@ -1,0 +1,13 @@
+[Device]
+Name=ATK F1 PRO
+Driver=atk
+DeviceType=mouse
+DeviceMatch=usb:373b:1030
+DeviceMatch=usb:373b:1031
+
+[Device]
+Name=ATK F1 V2 NK
+Driver=atk
+DeviceType=mouse
+DeviceMatch=usb:373b:10b5
+DeviceMatch=usb:373b:10b6

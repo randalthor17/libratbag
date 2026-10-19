@@ -186,6 +186,8 @@ src_libratbag = [
 	'src/driver-sinowealth.c',
 	'src/driver-sinowealth.h',
 	'src/driver-sinowealth-nubwo.c',
+	'src/driver-atk.c',
+	'src/driver-atk.h',
 	'src/driver-marsgaming/driver-marsgaming.c',
 	'src/driver-marsgaming/marsgaming-buttons.c',
 	'src/driver-marsgaming/marsgaming-command.c',

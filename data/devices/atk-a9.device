@@ -1,0 +1,11 @@
+[Device]
+Name=ATK A9 Plus NK
+Driver=atk
+DeviceType=mouse
+DeviceMatch=usb:373b:1085
+
+[Device]
+Name=ATK A9
+Driver=atk
+DeviceType=mouse
+DeviceMatch=usb:373b:10f1

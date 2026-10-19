@@ -1,0 +1,28 @@
+[Device]
+Name=ATK VXE R1 NK (Nearlink)
+Driver=atk
+DeviceType=mouse
+DeviceMatch=usb:373b:1065
+DeviceMatch=usb:373b:1066
+DeviceMatch=usb:373b:10c7
+DeviceMatch=usb:373b:10c8
+
+[Device]
+Name=ATK VXE R1 S NK
+Driver=atk
+DeviceType=mouse
+DeviceMatch=usb:373b:121f
+
+[Device]
+Name=ATK VXE R1 Ultra NK
+Driver=atk
+DeviceType=mouse
+DeviceMatch=usb:373b:11d2
+DeviceMatch=usb:373b:11f9
+
+[Device]
+Name=ATK VXE R1 S NK (receiver)
+Driver=atk
+DeviceType=mouse
+DeviceMatch=usb:373b:1216
+DeviceMatch=usb:373b:124d
